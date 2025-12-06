@@ -1,0 +1,64 @@
+# ----------------------------
+# Node & package managers
+# ----------------------------
+node_modules/
+
+# If someone accidentally generates these, ignore them:
+package-lock.json
+yarn.lock
+
+# pnpm store is outside the project by default, but ignore if local
+.pnpm-store/
+
+# ----------------------------
+# Build artifacts
+# ----------------------------
+dist/
+*.tsbuildinfo
+
+# tsup / esbuild cache (rare, but harmless to ignore)
+.esbuild/
+
+# ----------------------------
+# Tests & coverage
+# ----------------------------
+coverage/
+.nyc_output/
+# Vitest
+.vitest/
+
+# ----------------------------
+# Lint / format caches
+# ----------------------------
+.eslintcache
+
+# ----------------------------
+# Env & local config
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# IDE / OS cruft
+# ----------------------------
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.code-workspace
+
+# ----------------------------
+# Logs & temporary files
+# ----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.tmp
+.tmp/
