@@ -55,6 +55,7 @@ async function main() {
       console.error(`Usage: bigcommerce-oauth-next init <path>`);
       process.exit(1);
   }
+  return;
 }
 
 main();

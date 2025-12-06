@@ -73,7 +73,7 @@ export async function initCommand(args: string[]) {
   const dest = path.resolve(projectRoot, targetPath);
 
   // Resolve the path to the TypeScript template directory bundled with the package
-  const templateDir = path.resolve(__dirname, '../../../templates/ts');
+  const templateDir = path.resolve(__dirname, '../templates/ts');
 
   console.log(`Scaffolding BigCommerce OAuth Next files to:\n  ${dest}`);
 

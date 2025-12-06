@@ -1,8 +1,6 @@
 import type { SearchParams } from './_dto/SearchParams';
 import { AuthResult } from './_presenters/AuthResult';
 
-const { BIGCOMMERCE_APP_ID = '' } = process.env;
-
 /**
  * Server component responsible for preparing the data required by the
  * {@link AuthResult} presenter based on the query parameters appended by the

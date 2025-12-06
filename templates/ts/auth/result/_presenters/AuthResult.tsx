@@ -1,7 +1,7 @@
 'use client';
 
 import { Box, H1, Panel, Text } from '@bigcommerce/big-design';
-import { AuthResultProps } from '../_dto/AuthResultProps';
+import type { AuthResultProps } from './_dto/AuthResultProps';
 
 /**
  * Client-side presenter for displaying the result of the BigCommerce app
@@ -24,13 +24,8 @@ export function AuthResult({ status = 'success', code }: AuthResultProps) {
             <Text marginBottom="large">Your app is now connected to this BigCommerce store.</Text>
 
             <Text marginBottom="medium">
-              You're all set! You can now open <strong>My App</strong> from the BigCommerce control
-              panel to configure your settings and start using the app.
-            </Text>
-
-            <Text marginTop="medium">
-              To continue, refresh the page or go to <strong>Apps → My App</strong> in your
-              BigCommerce admin.
+              You&apos;re all set! You can now open <strong>Apps → My App</strong> from the
+              BigCommerce control panel to configure your settings and start using the app.
             </Text>
           </>
         ) : (
