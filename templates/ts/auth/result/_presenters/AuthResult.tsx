@@ -21,7 +21,7 @@ export function AuthResult({ status = 'success', code }: AuthResultProps) {
           <>
             <H1 marginBottom="medium">My App Installed 🎉</H1>
 
-            <Text marginBottom="large">Your app is now connected to this BigCommerce store.</Text>
+            <Text marginBottom="large">The app is now connected to this BigCommerce store.</Text>
 
             <Text marginBottom="medium">
               You&apos;re all set! You can now open <strong>Apps → My App</strong> from the
